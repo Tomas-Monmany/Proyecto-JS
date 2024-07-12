@@ -1,22 +1,26 @@
 const proteinas=["proteina Star", "proteina Sun", "proteina Moon"]
 const creatinas=["creatina Star", "creatina Sun", "creatina Moon"]
 
-function mostrarProductos(){
-    let respuesta=prompt("Elige que producto deseas consultar: Proteina, Creatina, Multivitaminico");
-switch (respuesta) {
-    case "proteinas":
-        console.log(mostrarProteinas())
-        break;
-        case "creatinas":
-        console.log(mostrarCreatinas())
-        break;    
+function mostrarProductos() {
+    let respuesta = prompt("Elige qué producto deseas consultar: Proteína, Creatina, Multivitamínico");
+    switch (respuesta.toLowerCase()) { 
+        case "proteína":
+            console.log(mostrarProteinas());
+            break;
+        case "creatina":
+            console.log(mostrarCreatinas());
+            break;
+        case "multivitamínico": 
+            console.log(mostrarMultivitaminico());
+            break;    
+        default:
+            alert("Dicha opción no es válida");
+            break; 
+    }
+}
 
-    default:
-        alert("Dicha opción no es válida")
-        console.log(mostrarProductos())
-        break;
-}}
-console.log(mostrarProductos())
+
+mostrarProductos();
 
 
 
