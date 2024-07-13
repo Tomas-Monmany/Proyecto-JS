@@ -1,69 +1,59 @@
-
-const proteinas = ["proteina Star", "proteina Sun", "proteina Moon"];
-const creatinas = ["creatina Star", "creatina Sun", "creatina Moon"];
+const productos = {
+  proteinas: {
+    star: 20000,
+    sun: 25000,
+    moon: 30000,
+  },
+  creatinas: {
+    star: 30000,
+    sun: 35000,
+    moon: 40000,
+  },
+};
 
 function mostrarProductos() {
-  let respuesta = prompt(
-    "Elige qué producto deseas consultar: Proteína, Creatina"
+  let producto = "";
+  while (true) {
+    producto = prompt(
+      "Elige qué producto deseas consultar: Proteínas o Creatinas"
+    ).toLowerCase();
+    switch (producto) {
+      case "proteinas":
+      case "creatinas":
+        mostrarMarca(producto);
+        return;
+      default:
+        alert("Opción no válida. Inténtalo de nuevo.");
+    }
+  }
+}
+
+function mostrarMarca(tipo) {
+  let marca = "";
+  while (true) {
+    marca = prompt(
+      `¿Qué marca deseas consultar: Star, Sun o Moon?`
+    ).toLowerCase();
+    if (productos[tipo][marca]) {
+      agregarAlCarrito(tipo, marca);
+      return;
+    } else {
+      alert("Dicha opción no es válida. Inténtalo de nuevo.");
+    }
+  }
+}
+
+function agregarAlCarrito(tipo, marca) {
+  let precio = productos[tipo][marca];
+  let agregar = confirm(
+    `El precio es de $${precio}. ¿Desea agregarlo al carrito?`
   );
-  switch (respuesta) {
-    case "proteina":
-      console.log(mostrarProteinas());
-      break;
-    case "creatina":
-      console.log(mostrarCreatinas());
-      break;
-    default:
-      alert("Dicha opción no es válida");
-      break;
+
+  if (agregar) {
+    alert("Su producto ha sido agregado");
+  } else {
+    mostrarMarca(tipo);
   }
 }
 
 mostrarProductos();
-
-function mostrarProteinas() {
-  let marcaProteina = prompt("¿Qué marca deseas consultar: Star, Sun o Moon");
-  switch (marcaProteina) {
-    case "star":
-      let agregarAlCarrito1 = confirm(
-        "El precio es de $20.000 ¿Desea agregarlo al carrito?"
-      );
-      if (agregarAlCarrito1 == true) {
-        alert("su producto ha sido agregado");
-        console.log(mostrarProductos());
-      } else {
-        console.log(mostrarProteinas());
-      }
-      break;
-    case "sun":
-      let agregarAlCarrito2 = confirm(
-        "El precio es de $25.000 ¿Desea agregarlo al carrito?"
-      );
-      if (agregarAlCarrito2 == true) {
-        alert("su producto ha sido agregado");
-        console.log(mostrarProductos());
-      } else {
-        console.log(mostrarProteinas());
-      }
-      break;
-    case "moon":
-      let agregarAlCarrito3 = confirm(
-        "El precio es de $30.000 ¿Desea agregarlo al carrito?"
-      );
-      if (agregarAlCarrito3 == true) {
-        alert("su producto ha sido agregado");
-        console.log(mostrarProductos());
-      } else {
-        console.log(mostrarProteinas());
-      }
-      break;
-    default:
-      alert("Dicha opción no es válida");
-      console.log(mostrarProteinas());
-      break;
-  }
-}
-
-function mostrarCreatinas() {
-  console.log(creatinas);
-}
