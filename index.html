@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuplementosDeportivos</title>
-    <script src="./JS/script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arnold Suplementos</title>
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="icon" type="image/png" href="./imagenes/Logo-pagina.png">
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="logo__container">
+        <img src="./imagenes/Logo-pagina.png" alt="Logo-pagina" />
+      </div>
+      <h1>Arnold Suplementos</h1>
+      <nav>
+        <ul>
+          <li><a href="#products">Productos</a></li>
+          <li><a href="#cart">Carrito</a></li>
+          <li><a href="#checkout">Checkout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="products">
+        <div class="search-bar-container">
+          <h2>Busca aquí tus productos</h2>
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Buscar productos..."
+          />
+        </div>
+
+        <div id="categories">
+          <button id="Todos">Todos</button>
+          <button id="Proteinas">Proteínas</button>
+          <button id="Creatinas">Creatinas</button>
+        </div>
+        <div class="product-list" id="product-list">
+          <!--Los productos se muestran aca-->
+        </div>
+      </section>
+
+      <section id="cart">
+        <h2>Carrito de compras</h2>
+        <div class="cart-items" id="cart-items">
+          <!-- Los productos agregados al carrito se muestran aca -->
+        </div>
+        <div class="cart-total" id="cart-total">Total: $0.00</div>
+        <button id="clear-cart">Vaciar carrito</button>
+      </section>
+
+      <section id="checkout">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+          <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required />
+          </div>
+          <div>
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" required />
+          </div>
+          <div>
+            <label for="card">Nro de tarjeta:</label>
+            <input
+              type="text"
+              id="card"
+              required
+              pattern="\d{16}"
+              title="Por favor ingrese un numero de tarjeta valido de 16 dígitos"
+            />
+          </div>
+          <button type="submit">Realizar orden</button>
+        </form>
+      </section>
+    </main>
+    <script src="./JS/script.js"></script>
+  </body>
 </html>
