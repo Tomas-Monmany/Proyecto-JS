@@ -1,31 +1,30 @@
 [
-    {
-      "id": 1,
-      "name": "WHEY PROTEIN TRUE MADE 2.05LBS - ENA SPORT",
-      "price": 36850,
-      "image": "https://acdn.mitiendanube.com/stores/306/768/products/whey-protein-bc11f44782b88a42e917158857611329-1024-1024.webp",
-      "category": "Proteinas"
-    },
-    {
-      "id": 2,
-      "name": "Creatina Monohidrato 300Grs - Mervick",
-      "price": 25820,
-      "image": "https://acdn.mitiendanube.com/stores/306/768/products/creatina-300gr1-e53902b98da9d31bdf15575355171319-1024-1024.webp",
-      "category": "Creatinas"
-    },
-    {
-      "id": 3,
-      "name": "XT GOLD PROTEIN 1KG - HTN",
-      "price": 43920,
-      "image": "https://acdn.mitiendanube.com/stores/306/768/products/xt-gold-protein-9ec6205557aa319b6c17159050275705-1024-1024.webp",
-      "category": "Proteinas"
-    },
-    {
-      "id": 4,
-      "name": "CREATINE MONOHIDRATO 500 Grs - HTN",
-      "price": 46400,
-      "image": "https://acdn.mitiendanube.com/stores/306/768/products/creatina-monohidrato-1-935e191252ed9e774017159852325052-1024-1024.webp",
-      "category": "Creatinas"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "WHEY PROTEIN TRUE MADE 2.05LBS - ENA SPORT",
+    "price": 36850,
+    "image": "https://acdn.mitiendanube.com/stores/306/768/products/whey-protein-bc11f44782b88a42e917158857611329-1024-1024.webp",
+    "category": "Proteinas"
+  },
+  {
+    "id": 2,
+    "name": "Creatina Monohidrato 300Grs - Mervick",
+    "price": 25820,
+    "image": "https://acdn.mitiendanube.com/stores/306/768/products/creatina-300gr1-e53902b98da9d31bdf15575355171319-1024-1024.webp",
+    "category": "Creatinas"
+  },
+  {
+    "id": 3,
+    "name": "XT GOLD PROTEIN 1KG - HTN",
+    "price": 43920,
+    "image": "https://acdn.mitiendanube.com/stores/306/768/products/xt-gold-protein-9ec6205557aa319b6c17159050275705-1024-1024.webp",
+    "category": "Proteinas"
+  },
+  {
+    "id": 4,
+    "name": "CREATINE MONOHIDRATO 500 Grs - HTN",
+    "price": 46400,
+    "image": "https://acdn.mitiendanube.com/stores/306/768/products/creatina-monohidrato-1-935e191252ed9e774017159852325052-1024-1024.webp",
+    "category": "Creatinas"
+  }
+]
