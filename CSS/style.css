@@ -104,6 +104,9 @@ header nav ul li a:hover {
   gap: 3px;
   margin: 10px;
 }
+#sort-options {
+  margin-left: 5px;
+}
 .product,
 .cart-item {
   color: #fff;

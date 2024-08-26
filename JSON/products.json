@@ -26,5 +26,33 @@
     "price": 46400,
     "image": "https://acdn.mitiendanube.com/stores/306/768/products/creatina-monohidrato-1-935e191252ed9e774017159852325052-1024-1024.webp",
     "category": "Creatinas"
+  },
+  {
+    "id": 5,
+    "name": "100% WHEY PROTEIN 5 LBS - GOLD NUTRITION",
+    "price": 65200,
+    "image": "https://acdn.mitiendanube.com/stores/306/768/products/whey-mercado-5-1866ce8f76fb6bb94117187699832428-1024-1024.webp",
+    "category": "Proteinas"
+  },
+  {
+    "id": 6,
+    "name": "CREATINA MICRONIZADA 300 Grs - ENA SPORT",
+    "price": 28725,
+    "image": "https://acdn.mitiendanube.com/stores/306/768/products/7792981010026-ecf98566d6143b336a17141355568452-1024-1024.webp",
+    "category": "Creatinas"
+  },
+  {
+    "id": 7,
+    "name": "USA SOY PROTEIN 1 Kg - HTN",
+    "price": 34115,
+    "image": "https://acdn.mitiendanube.com/stores/306/768/products/soy-protein1-c21c14cf5f57927b7415907010413075-1024-1024.webp",
+    "category": "Proteinas"
+  },
+  {
+    "id": 8,
+    "name": "Creatina Premium 1kg Glutamina +Taurina Maltodextrina - Mervick",
+    "price": 27462,
+    "image": "https://acdn.mitiendanube.com/stores/306/768/products/creatina-premium-1-c8eede5bfb67cd242917159842942129-1024-1024.webp",
+    "category": "Creatinas"
   }
 ]
